@@ -1,25 +1,19 @@
-# Budget App - Frontend
+# Budget Tracker — Starter (Next.js + Tailwind)
 
-Stack: React + Vite + TypeScript + Tailwind CSS + Recharts
+This is a minimal starter scaffold for the responsive budget-tracking web app we discussed.
+It contains:
+- Next.js (pages dir)
+- Tailwind CSS setup
+- A sample BudgetSummary React component (Tailwind)
+- A minimal API route (`/api/transactions`) that stores transactions in a JSON file (for development only)
+- Instructions to install and run
 
-## Quickstart
+## Quick start
+1. `cd budget-webapp`
+2. `npm install`
+3. `npm run dev`
+4. Open http://localhost:3000
 
-1. Install deps
-```bash
-npm install
-```
-
-2. Start dev server
-```bash
-npm run dev
-```
-Open http://localhost:5173
-
-3. Environment
-Set `VITE_API_URL` (defaults to http://localhost:8000/api)
-
-## Build
-```bash
-npm run build
-npm run preview
-```
+## Notes
+- This is an MVP scaffold. For production use swap the JSON file storage with Postgres (Supabase or managed DB) and add real auth.
+- The `pages/api/transactions` is file-backed for quick local testing.
