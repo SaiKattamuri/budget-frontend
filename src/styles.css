@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-[#07111A] text-[#E6F0F6] font-sans; }
+.glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(8px) saturate(110%); border:1px solid rgba(255,255,255,0.06); border-radius:12px; padding:1rem; }
+.kpi { font-weight:700; }
+.muted { color:#9FB3C8; }
