@@ -9,17 +9,17 @@ export default function TransactionList(){
     })
   },[])
 
-  if(txns.length === 0) return <div className="text-gray-600">No transactions yet.</div>
+  if(txns.length === 0) return <div className="text-slate-600">No transactions yet.</div>
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-3">
       {txns.map(t=>(
-        <div key={t.id} className="p-3 bg-white rounded shadow-sm flex justify-between items-center">
+        <div key={t.id} className="p-3 bg-white/30 backdrop-blur-sm rounded-md flex justify-between items-center">
           <div>
-            <div className="font-medium">{t.category || 'Uncategorized'}</div>
-            <div className="text-sm text-gray-500">{t.date} • {t.note}</div>
+            <div className="font-medium text-slate-800">{t.category || 'Uncategorized'}</div>
+            <div className="text-sm text-slate-600">{t.date} • {t.note}</div>
           </div>
-          <div className={`font-medium ${t.type==='expense' ? 'text-red-600' : 'text-green-600'}`}>
+          <div className={`font-semibold ${t.type==='expense' ? 'text-red-600' : 'text-green-700'}`}>
             {t.type==='expense' ? '-' : '+'}₹{t.amount}
           </div>
         </div>

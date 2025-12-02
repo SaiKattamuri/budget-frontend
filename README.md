@@ -1,10 +1,10 @@
-# Budget Tracker — Starter (Next.js + Tailwind)
+# Budget Tracker — Glassy Starter (Next.js + Tailwind)
 
-This is a minimal starter scaffold for the responsive budget-tracking web app we discussed.
+This is a minimal starter scaffold for the responsive budget-tracking web app with a glassmorphism UI.
 It contains:
 - Next.js (pages dir)
 - Tailwind CSS setup
-- A sample BudgetSummary React component (Tailwind)
+- A sample BudgetSummary React component (glassy style)
 - A minimal API route (`/api/transactions`) that stores transactions in a JSON file (for development only)
 - Instructions to install and run
 
