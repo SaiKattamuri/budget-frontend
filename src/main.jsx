@@ -1,8 +1,13 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "./styles.css";
-import Dashboard from "./pages/Dashboard";
+import App from "./App";
 
-function App(){ return <Dashboard /> }
+const rootEl = document.getElementById("root");
 
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(rootEl).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
